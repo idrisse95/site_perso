@@ -336,8 +336,8 @@ footer{
     background-color: transparent;
     width: 300px;
     height: 300px;
-    perspective: 1000px;
-    margin-right: 10px;
+    perspective: 2000px;
+    
   }
   
   .flip-card-inner {
@@ -345,18 +345,21 @@ footer{
     width: 100%;
     height: 100%;
     text-align: center;
-    transition: transform 0.6s;
+    transition: transform 1s;
+    
     transform-style: preserve-3d;
   }
   
   .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
+  
   }
   
   .flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
+    
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
@@ -367,8 +370,11 @@ footer{
   }
   
   .flip-card-back {
-    background-color: #2980b9;
-    color: white;
+    background-color: #297fb900;
+    color: rgb(176, 139, 19);
+    padding-top: 100px;
+    border-radius: 50%;
+    left: -35px;
     transform: rotateY(180deg);
   }
 
